@@ -1,0 +1,23 @@
+{
+  counters {
+    count
+  }
+  rounds(first: 10, orderBy:blockNumber, orderDirection:desc) {
+    id
+    timestamp
+    result
+    startPrice
+    endPrice
+    traders{
+      avatarUrl
+      amount
+      sender
+      prediction
+    }
+    winners{
+      tradeAmount
+      whiteLabelId
+      sender
+    }
+  }
+}
