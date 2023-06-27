@@ -1,0 +1,104 @@
+type GameStarted @entity(immutable: true) {
+  id: Bytes!
+
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type GameStopped @entity(immutable: true) {
+  id: Bytes!
+  reason: Bytes! # bytes
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type OwnershipTransferred @entity(immutable: true) {
+  id: Bytes!
+  previousOwner: Bytes! # address
+  newOwner: Bytes! # address
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type RoundDistributed @entity(immutable: true) {
+  id: Bytes!
+  poolId: Bytes! # bytes
+  totalWinners: BigInt! # uint256
+  from: BigInt! # uint256
+  to: BigInt! # uint256
+  timestamp: BigInt! # int64
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type RoundEnded @entity(immutable: true) {
+  id: Bytes!
+  poolId: Bytes! # bytes
+  timestamp: BigInt! # int64
+  startPrice: Int! # int32
+  endPrice: Int! # int32
+  indexedPoolId: Bytes! # bytes
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type RoundStarted @entity(immutable: true) {
+  id: Bytes!
+  poolId: Bytes! # bytes
+  timestamp: BigInt! # int64
+  price: Int! # int32
+  minTradeAmount: BigInt! # uint256
+  maxTradeAmount: BigInt! # uint256
+  poolTradesLimit: BigInt! # uint256
+  indexedPoolId: Bytes! # bytes
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type TradePlaced @entity(immutable: true) {
+  id: Bytes!
+  poolId: Bytes! # bytes
+  sender: Bytes! # address
+  amount: BigInt! # uint256
+  prediction: String! # string
+  newTotal: BigInt! # uint256
+  indexedPoolId: Bytes! # bytes
+  indexedSender: Bytes! # address
+  avatarUrl: String! # string
+  countryCode: String! # string
+  roundStartTime: BigInt! # int64
+  whiteLabelId: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type TradeReturned @entity(immutable: true) {
+  id: Bytes!
+  poolId: Bytes! # bytes
+  sender: Bytes! # address
+  amount: BigInt! # uint256
+  whiteLabelId: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
+
+type TradeWinningsSent @entity(immutable: true) {
+  id: Bytes!
+  poolId: Bytes! # bytes
+  sender: Bytes! # address
+  tradeAmount: BigInt! # uint256
+  winningsAmount: BigInt! # uint256
+  indexedSender: Bytes! # address
+  whiteLabelId: String! # string
+  blockNumber: BigInt!
+  blockTimestamp: BigInt!
+  transactionHash: Bytes!
+}
