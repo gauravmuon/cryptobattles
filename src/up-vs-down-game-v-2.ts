@@ -1,19 +1,15 @@
 import {
-  OwnershipTransferred as OwnershipTransferredEvent,
-  RoundDistributed as RoundDistributedEvent,
   RoundEnded as RoundEndedEvent,
-  RoundStarted as RoundStartedEvent,
   TradePlaced as TradePlacedEvent,
-  TradeReturned as TradeReturnedEvent,
   TradeWinningsSent as TradeWinningsSentEvent
 } from "../generated/UpVsDownGameV2/UpVsDownGameV2";
+
 import {
   Counter,
-  RoundEnded,
-  TradePlaced,
-  TradeWinningsSent
+  Round,
+  Trade,
+  TradeWinnings
 } from "../generated/schema";
-
 
 export function handleRoundEnded(event: RoundEndedEvent): void {
   const counter = _getOrCreatCounter();
@@ -31,7 +27,7 @@ export function handleRoundEnded(event: RoundEndedEvent): void {
 
 export function handleTradePlaced(event: TradePlacedEvent): void {
 
-  const entity = new TradePlaced(
+  const entity = new Trade(
     event.transaction.hash.concatI32(event.logIndex.toI32())
   );
 
@@ -54,7 +50,7 @@ export function handleTradePlaced(event: TradePlacedEvent): void {
 }
 
 export function handleTradeWinningsSent(event: TradeWinningsSentEvent): void {
-  const entity = new TradeWinningsSent(
+  const entity = new TradeWinnings(
     event.transaction.hash.concatI32(event.logIndex.toI32())
   );
   entity.sender = event.params.sender;
@@ -69,14 +65,14 @@ export function handleTradeWinningsSent(event: TradeWinningsSentEvent): void {
 }
 
 // try to store trade in current round, if round not present creat one
-function _storeTrade(trade: TradePlaced): void {
+function _storeTrade(trade: Trade): void {
   const counter = _getOrCreatCounter();
   const roundEnded = _getOrCreateRoundEnded(counter.count);
   roundEnded.traders = roundEnded.traders.concat([trade.id]);
   roundEnded.save();
 }
 
-function _storeWinners(winner: TradeWinningsSent): void {
+function _storeWinners(winner: TradeWinnings): void {
   const counter = _getOrCreatCounter();
   const roundEnded = _getOrCreateRoundEnded(counter.count - 1);
   roundEnded.winners = roundEnded.winners.concat([winner.id]);
@@ -85,15 +81,15 @@ function _storeWinners(winner: TradeWinningsSent): void {
 
 // try to find round with given id, if id dosen't match 
 // means round with that id has ended, id has increased, create a new round
-function _getOrCreateRoundEnded(id: number): RoundEnded {
-  let entity = RoundEnded.load(id.toString());
+function _getOrCreateRoundEnded(id: number): Round {
+  let entity = Round.load(id.toString());
   if (entity === null) {
-    entity = new RoundEnded(id.toString());
+    entity = new Round(id.toString());
     entity.traders = [];
     entity.result = "NONE";
     entity.winners = [];
   }
-  return entity as RoundEnded;
+  return entity as Round;
 }
 
 // this entity keep the track of numbers of rounds going on

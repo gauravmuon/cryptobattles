@@ -64,7 +64,7 @@ export class Counter extends Entity {
   }
 }
 
-export class RoundEnded extends Entity {
+export class Round extends Entity {
   constructor(id: string) {
     super();
     this.set("id", Value.fromString(id));
@@ -72,22 +72,22 @@ export class RoundEnded extends Entity {
 
   save(): void {
     let id = this.get("id");
-    assert(id != null, "Cannot save RoundEnded entity without an ID");
+    assert(id != null, "Cannot save Round entity without an ID");
     if (id) {
       assert(
         id.kind == ValueKind.STRING,
-        `Entities of type RoundEnded must have an ID of type String but the id '${id.displayData()}' is of type ${id.displayKind()}`
+        `Entities of type Round must have an ID of type String but the id '${id.displayData()}' is of type ${id.displayKind()}`
       );
-      store.set("RoundEnded", id.toString(), this);
+      store.set("Round", id.toString(), this);
     }
   }
 
-  static loadInBlock(id: string): RoundEnded | null {
-    return changetype<RoundEnded | null>(store.get_in_block("RoundEnded", id));
+  static loadInBlock(id: string): Round | null {
+    return changetype<Round | null>(store.get_in_block("Round", id));
   }
 
-  static load(id: string): RoundEnded | null {
-    return changetype<RoundEnded | null>(store.get("RoundEnded", id));
+  static load(id: string): Round | null {
+    return changetype<Round | null>(store.get("Round", id));
   }
 
   get id(): string {
@@ -203,7 +203,7 @@ export class RoundEnded extends Entity {
   }
 }
 
-export class TradePlaced extends Entity {
+export class Trade extends Entity {
   constructor(id: Bytes) {
     super();
     this.set("id", Value.fromBytes(id));
@@ -211,26 +211,24 @@ export class TradePlaced extends Entity {
 
   save(): void {
     let id = this.get("id");
-    assert(id != null, "Cannot save TradePlaced entity without an ID");
+    assert(id != null, "Cannot save Trade entity without an ID");
     if (id) {
       assert(
         id.kind == ValueKind.BYTES,
-        `Entities of type TradePlaced must have an ID of type Bytes but the id '${id.displayData()}' is of type ${id.displayKind()}`
+        `Entities of type Trade must have an ID of type Bytes but the id '${id.displayData()}' is of type ${id.displayKind()}`
       );
-      store.set("TradePlaced", id.toBytes().toHexString(), this);
+      store.set("Trade", id.toBytes().toHexString(), this);
     }
   }
 
-  static loadInBlock(id: Bytes): TradePlaced | null {
-    return changetype<TradePlaced | null>(
-      store.get_in_block("TradePlaced", id.toHexString())
+  static loadInBlock(id: Bytes): Trade | null {
+    return changetype<Trade | null>(
+      store.get_in_block("Trade", id.toHexString())
     );
   }
 
-  static load(id: Bytes): TradePlaced | null {
-    return changetype<TradePlaced | null>(
-      store.get("TradePlaced", id.toHexString())
-    );
+  static load(id: Bytes): Trade | null {
+    return changetype<Trade | null>(store.get("Trade", id.toHexString()));
   }
 
   get id(): Bytes {
@@ -390,7 +388,7 @@ export class TradePlaced extends Entity {
   }
 }
 
-export class TradeWinningsSent extends Entity {
+export class TradeWinnings extends Entity {
   constructor(id: Bytes) {
     super();
     this.set("id", Value.fromBytes(id));
@@ -398,25 +396,25 @@ export class TradeWinningsSent extends Entity {
 
   save(): void {
     let id = this.get("id");
-    assert(id != null, "Cannot save TradeWinningsSent entity without an ID");
+    assert(id != null, "Cannot save TradeWinnings entity without an ID");
     if (id) {
       assert(
         id.kind == ValueKind.BYTES,
-        `Entities of type TradeWinningsSent must have an ID of type Bytes but the id '${id.displayData()}' is of type ${id.displayKind()}`
+        `Entities of type TradeWinnings must have an ID of type Bytes but the id '${id.displayData()}' is of type ${id.displayKind()}`
       );
-      store.set("TradeWinningsSent", id.toBytes().toHexString(), this);
+      store.set("TradeWinnings", id.toBytes().toHexString(), this);
     }
   }
 
-  static loadInBlock(id: Bytes): TradeWinningsSent | null {
-    return changetype<TradeWinningsSent | null>(
-      store.get_in_block("TradeWinningsSent", id.toHexString())
+  static loadInBlock(id: Bytes): TradeWinnings | null {
+    return changetype<TradeWinnings | null>(
+      store.get_in_block("TradeWinnings", id.toHexString())
     );
   }
 
-  static load(id: Bytes): TradeWinningsSent | null {
-    return changetype<TradeWinningsSent | null>(
-      store.get("TradeWinningsSent", id.toHexString())
+  static load(id: Bytes): TradeWinnings | null {
+    return changetype<TradeWinnings | null>(
+      store.get("TradeWinnings", id.toHexString())
     );
   }
 

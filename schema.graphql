@@ -3,18 +3,18 @@ type Counter @entity{
   count: Int!
 }
 
-type RoundEnded @entity {
+type Round @entity {
   id: String!
   timestamp: BigInt # int64
   startPrice: Int # int32
   endPrice: Int # int32
   blockNumber: BigInt
   result: String!
-  traders: [TradePlaced!]!
-  winners: [TradeWinningsSent!]!
+  traders: [Trade!]!
+  winners: [TradeWinnings!]!
 }
 
-type TradePlaced @entity(immutable: true) {
+type Trade @entity(immutable: true) {
   id: Bytes!
   sender: Bytes! # address
   amount: BigInt! # uint256
@@ -29,7 +29,7 @@ type TradePlaced @entity(immutable: true) {
   blockNumber: BigInt!
 }
 
-type TradeWinningsSent @entity(immutable: true) {
+type TradeWinnings @entity(immutable: true) {
   id: Bytes!
   sender: Bytes! # address
   tradeAmount: BigInt! # uint256
