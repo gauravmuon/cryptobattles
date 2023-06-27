@@ -1,6 +1,6 @@
 specVersion: 0.0.5
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum
     name: UpVsDownGameV2
@@ -25,12 +25,13 @@ dataSources:
         - TradeWinningsSent
       abis:
         - name: UpVsDownGameV2
-          file: ./abis/UpVsDownGameV2.json
+          file: UpVsDownGameV2/abis/UpVsDownGameV2.json
       eventHandlers:
         - event: RoundEnded(bytes,int64,int32,int32,indexed bytes)
           handler: handleRoundEnded
-        - event: TradePlaced(bytes,address,uint256,string,uint256,indexed bytes,indexed address,string,string,int64,string)
+        - event: TradePlaced(bytes,address,uint256,string,uint256,indexed bytes,indexed
+            address,string,string,int64,string)
           handler: handleTradePlaced
         - event: TradeWinningsSent(bytes,address,uint256,uint256,indexed address,string)
           handler: handleTradeWinningsSent
-      file: ./src/up-vs-down-game-v-2.ts
+      file: UpVsDownGameV2/UpVsDownGameV2.wasm

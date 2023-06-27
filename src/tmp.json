@@ -1,0 +1,427 @@
+{
+  "data": {
+    "counters": [
+      {
+        "id": "counter",
+        "count": 1336
+      }
+    ],
+    "roundEndeds": [
+      {
+        "blockNumber": null,
+        "traders": [
+          {
+            "blockNumber": "44070542",
+            "amount": "10000000000000000000",
+            "sender": "0xff291447b5a4fa8c9314444916173f39a9250a8d",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=XzKyFLc5gwYseExfjS&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070542",
+            "amount": "75000000000000000000",
+            "sender": "0x66b74d1195fe8ea6db0dd600d4a4db51aa8b7d3b",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=kkGWsVCNBZFO5XWHDY&flip=false",
+            "whiteLabelId": "playnance"
+          }
+        ],
+        "winners": []
+      },
+      {
+        "blockNumber": "44070536",
+        "traders": [
+          {
+            "blockNumber": "44070494",
+            "amount": "75000000000000000000",
+            "sender": "0x66b74d1195fe8ea6db0dd600d4a4db51aa8b7d3b",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=AtPk8fSZBVR4hLWK5G&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070493",
+            "amount": "75000000000000000000",
+            "sender": "0x36dbed20f61ba77af62064a2d01ed2821406033b",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=vIDCU69DlTZNYyc6hL&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070492",
+            "amount": "50000000000000000000",
+            "sender": "0xa9d673f0c4a181a6189612813f0d335cbf5d1b7f",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=7MTHCtYtFjvRiJi9D3&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070501",
+            "amount": "10000000000000000000",
+            "sender": "0xff291447b5a4fa8c9314444916173f39a9250a8d",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=0UqemUHpDMCDy6rxxO&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070501",
+            "amount": "10000000000000000000",
+            "sender": "0x856d5a1f3d7769bebf46473354f1acf6fc172ea8",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=RdXJ7Tfz4qTHA0ZpA0&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070491",
+            "amount": "10000000000000000000",
+            "sender": "0x1970f8bd997170520185feaa056215023beed56a",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=IfETqEPLgyXctz10mn&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070489",
+            "amount": "25000000000000000000",
+            "sender": "0x98a3c37c321bd61d26d6a0953cdbcbac08591ffa",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=JlGCDYbKFdHh9tjwKr&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070502",
+            "amount": "25000000000000000000",
+            "sender": "0x27f9adb7b5daf6071ee1cbe4532e835c1bb13d49",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=QRczBAd6c5jNqFBRDR&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070497",
+            "amount": "50000000000000000000",
+            "sender": "0x74ae1be2f0184a734b45445dfaa0695c1a4b5884",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=V9SY7nFipieGCC1e5N&flip=false",
+            "whiteLabelId": "playnance"
+          }
+        ],
+        "winners": [
+          {
+            "tradeAmount": "50000000000000000000",
+            "winningsAmount": "47957000000000000000",
+            "blockNumber": "44070536",
+            "sender": "0xa9d673f0c4a181a6189612813f0d335cbf5d1b7f"
+          },
+          {
+            "tradeAmount": "75000000000000000000",
+            "winningsAmount": "71162000000000000000",
+            "blockNumber": "44070536",
+            "sender": "0x36dbed20f61ba77af62064a2d01ed2821406033b"
+          },
+          {
+            "tradeAmount": "10000000000000000000",
+            "winningsAmount": "9282000000000000000",
+            "blockNumber": "44070536",
+            "sender": "0xff291447b5a4fa8c9314444916173f39a9250a8d"
+          },
+          {
+            "tradeAmount": "25000000000000000000",
+            "winningsAmount": "23205000000000000000",
+            "blockNumber": "44070536",
+            "sender": "0x27f9adb7b5daf6071ee1cbe4532e835c1bb13d49"
+          }
+        ]
+      },
+      {
+        "blockNumber": "44070479",
+        "traders": [
+          {
+            "blockNumber": "44070437",
+            "amount": "10000000000000000000",
+            "sender": "0x373d6fdbb630cea6453121e86c7e159d86dd0282",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=e4Lr6R7ehGdv3abjkm&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070425",
+            "amount": "10000000000000000000",
+            "sender": "0x856d5a1f3d7769bebf46473354f1acf6fc172ea8",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=0yQVS16BxoNGd13CMv&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070438",
+            "amount": "50000000000000000000",
+            "sender": "0x74ae1be2f0184a734b45445dfaa0695c1a4b5884",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=wS9CTiz9zHvSwNDxl6&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070439",
+            "amount": "75000000000000000000",
+            "sender": "0x36dbed20f61ba77af62064a2d01ed2821406033b",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=HtsNlpNSo8tquMmfz4&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070433",
+            "amount": "75000000000000000000",
+            "sender": "0x66b74d1195fe8ea6db0dd600d4a4db51aa8b7d3b",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=TOwu2Os9WRyMMHJAPI&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070425",
+            "amount": "25000000000000000000",
+            "sender": "0x98a3c37c321bd61d26d6a0953cdbcbac08591ffa",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=yMQmOPXvUvGyPLrqg5&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070444",
+            "amount": "10000000000000000000",
+            "sender": "0x1970f8bd997170520185feaa056215023beed56a",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=Cp88HDVHOfHuy4ieqK&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070433",
+            "amount": "10000000000000000000",
+            "sender": "0xff291447b5a4fa8c9314444916173f39a9250a8d",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=DdvLacw2U6gyG2hEmP&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070446",
+            "amount": "50000000000000000000",
+            "sender": "0xa9d673f0c4a181a6189612813f0d335cbf5d1b7f",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=UCpcT0Eqy2Wy1vf541&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070439",
+            "amount": "25000000000000000000",
+            "sender": "0x27f9adb7b5daf6071ee1cbe4532e835c1bb13d49",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=WZLTeuSv82VXCU0Q8E&flip=true",
+            "whiteLabelId": "playnance"
+          }
+        ],
+        "winners": [
+          {
+            "tradeAmount": "10000000000000000000",
+            "winningsAmount": "7735000000000000000",
+            "blockNumber": "44070479",
+            "sender": "0x856d5a1f3d7769bebf46473354f1acf6fc172ea8"
+          },
+          {
+            "tradeAmount": "25000000000000000000",
+            "winningsAmount": "21658000000000000000",
+            "blockNumber": "44070479",
+            "sender": "0x98a3c37c321bd61d26d6a0953cdbcbac08591ffa"
+          },
+          {
+            "tradeAmount": "75000000000000000000",
+            "winningsAmount": "68068000000000000000",
+            "blockNumber": "44070479",
+            "sender": "0x66b74d1195fe8ea6db0dd600d4a4db51aa8b7d3b"
+          },
+          {
+            "tradeAmount": "50000000000000000000",
+            "winningsAmount": "44863000000000000000",
+            "blockNumber": "44070479",
+            "sender": "0x74ae1be2f0184a734b45445dfaa0695c1a4b5884"
+          },
+          {
+            "tradeAmount": "10000000000000000000",
+            "winningsAmount": "7735000000000000000",
+            "blockNumber": "44070479",
+            "sender": "0x1970f8bd997170520185feaa056215023beed56a"
+          }
+        ]
+      },
+      {
+        "blockNumber": "44070423",
+        "traders": [
+          {
+            "blockNumber": "44070392",
+            "amount": "50000000000000000000",
+            "sender": "0xa9d673f0c4a181a6189612813f0d335cbf5d1b7f",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=rZHnfLXR278kEKyA5o&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070382",
+            "amount": "10000000000000000000",
+            "sender": "0x856d5a1f3d7769bebf46473354f1acf6fc172ea8",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=VUJGaSA0cjLguZq7QP&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070392",
+            "amount": "75000000000000000000",
+            "sender": "0x36dbed20f61ba77af62064a2d01ed2821406033b",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=5P43Kdhm3F8cVV0Xzb&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070393",
+            "amount": "10000000000000000000",
+            "sender": "0x373d6fdbb630cea6453121e86c7e159d86dd0282",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=d1cJBh0M3EYachuz0H&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070389",
+            "amount": "50000000000000000000",
+            "sender": "0x74ae1be2f0184a734b45445dfaa0695c1a4b5884",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=DUo5pVtJsjYnv8JGBM&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070383",
+            "amount": "25000000000000000000",
+            "sender": "0x98a3c37c321bd61d26d6a0953cdbcbac08591ffa",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=w652i3JWij9ZfiydhF&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070392",
+            "amount": "10000000000000000000",
+            "sender": "0x1970f8bd997170520185feaa056215023beed56a",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=zqYET4mkkhXLpJTOid&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070381",
+            "amount": "25000000000000000000",
+            "sender": "0x27f9adb7b5daf6071ee1cbe4532e835c1bb13d49",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=yfoklQ05alV6ucyXg2&flip=true",
+            "whiteLabelId": "playnance"
+          }
+        ],
+        "winners": [
+          {
+            "tradeAmount": "25000000000000000000",
+            "winningsAmount": "12967500000000000000",
+            "blockNumber": "44070423",
+            "sender": "0x27f9adb7b5daf6071ee1cbe4532e835c1bb13d49"
+          },
+          {
+            "tradeAmount": "50000000000000000000",
+            "winningsAmount": "26799500000000000000",
+            "blockNumber": "44070423",
+            "sender": "0xa9d673f0c4a181a6189612813f0d335cbf5d1b7f"
+          },
+          {
+            "tradeAmount": "75000000000000000000",
+            "winningsAmount": "39767000000000000000",
+            "blockNumber": "44070423",
+            "sender": "0x36dbed20f61ba77af62064a2d01ed2821406033b"
+          },
+          {
+            "tradeAmount": "10000000000000000000",
+            "winningsAmount": "5187000000000000000",
+            "blockNumber": "44070423",
+            "sender": "0x373d6fdbb630cea6453121e86c7e159d86dd0282"
+          }
+        ]
+      },
+      {
+        "blockNumber": "44070377",
+        "traders": [
+          {
+            "blockNumber": "44070326",
+            "amount": "10000000000000000000",
+            "sender": "0x373d6fdbb630cea6453121e86c7e159d86dd0282",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=MG421JF8lUXxKV4K5U&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070322",
+            "amount": "75000000000000000000",
+            "sender": "0x36dbed20f61ba77af62064a2d01ed2821406033b",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=mi9fYSUgoxooUsoy5j&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070337",
+            "amount": "10000000000000000000",
+            "sender": "0x856d5a1f3d7769bebf46473354f1acf6fc172ea8",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=hArjBqn8LJspMWSktb&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070343",
+            "amount": "50000000000000000000",
+            "sender": "0x74ae1be2f0184a734b45445dfaa0695c1a4b5884",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=VCOm8bXL4lbrFwXTV2&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070336",
+            "amount": "25000000000000000000",
+            "sender": "0x98a3c37c321bd61d26d6a0953cdbcbac08591ffa",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=W4QsDqmiB90NN7UjX8&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070333",
+            "amount": "10000000000000000000",
+            "sender": "0x1970f8bd997170520185feaa056215023beed56a",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=X3f8P4XpYnra0mqV5W&flip=false",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070329",
+            "amount": "50000000000000000000",
+            "sender": "0xa9d673f0c4a181a6189612813f0d335cbf5d1b7f",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=MRz6RVShMttK2S0YGR&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070324",
+            "amount": "10000000000000000000",
+            "sender": "0xff291447b5a4fa8c9314444916173f39a9250a8d",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=rbKmxqUOqEjtXEuAgJ&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070343",
+            "amount": "25000000000000000000",
+            "sender": "0x27f9adb7b5daf6071ee1cbe4532e835c1bb13d49",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=TU8o5uXCpXXNoIO2vx&flip=true",
+            "whiteLabelId": "playnance"
+          },
+          {
+            "blockNumber": "44070331",
+            "amount": "75000000000000000000",
+            "sender": "0x66b74d1195fe8ea6db0dd600d4a4db51aa8b7d3b",
+            "avatarUrl": "https://api.dicebear.com/5.x/open-peeps/svg?seed=ROrT41uKM3ngbNkFX1&flip=false",
+            "whiteLabelId": "playnance"
+          }
+        ],
+        "winners": [
+          {
+            "tradeAmount": "75000000000000000000",
+            "winningsAmount": "68068000000000000000",
+            "blockNumber": "44070377",
+            "sender": "0x36dbed20f61ba77af62064a2d01ed2821406033b"
+          },
+          {
+            "tradeAmount": "10000000000000000000",
+            "winningsAmount": "7735000000000000000",
+            "blockNumber": "44070377",
+            "sender": "0xff291447b5a4fa8c9314444916173f39a9250a8d"
+          },
+          {
+            "tradeAmount": "10000000000000000000",
+            "winningsAmount": "7735000000000000000",
+            "blockNumber": "44070377",
+            "sender": "0x373d6fdbb630cea6453121e86c7e159d86dd0282"
+          },
+          {
+            "tradeAmount": "50000000000000000000",
+            "winningsAmount": "44863000000000000000",
+            "blockNumber": "44070377",
+            "sender": "0xa9d673f0c4a181a6189612813f0d335cbf5d1b7f"
+          },
+          {
+            "tradeAmount": "25000000000000000000",
+            "winningsAmount": "21658000000000000000",
+            "blockNumber": "44070377",
+            "sender": "0x27f9adb7b5daf6071ee1cbe4532e835c1bb13d49"
+          }
+        ]
+      }
+    ]
+  }
+}
