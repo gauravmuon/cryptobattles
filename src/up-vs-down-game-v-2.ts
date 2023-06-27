@@ -46,13 +46,14 @@ export function handleTradePlaced(event: TradePlacedEvent): void {
   entity.save();
 
   _storeTrade(entity);
-
 }
 
 export function handleTradeWinningsSent(event: TradeWinningsSentEvent): void {
+
   const entity = new TradeWinnings(
     event.transaction.hash.concatI32(event.logIndex.toI32())
   );
+
   entity.sender = event.params.sender;
   entity.tradeAmount = event.params.tradeAmount;
   entity.winningsAmount = event.params.winningsAmount;
@@ -65,6 +66,8 @@ export function handleTradeWinningsSent(event: TradeWinningsSentEvent): void {
 }
 
 // try to store trade in current round, if round not present creat one
+// when user start trading, as round starts trade is blocked 
+// and is unblocked in 10sec ans round ends
 function _storeTrade(trade: Trade): void {
   const counter = _getOrCreatCounter();
   const roundEnded = _getOrCreateRoundEnded(counter.count);
@@ -72,6 +75,9 @@ function _storeTrade(trade: Trade): void {
   roundEnded.save();
 }
 
+// after a round is ended, till the next round comes to end
+// all TradeWinnings events occured during this interval goes 
+// to the previous rounde. ie (counter.count - 1)
 function _storeWinners(winner: TradeWinnings): void {
   const counter = _getOrCreatCounter();
   const roundEnded = _getOrCreateRoundEnded(counter.count - 1);
@@ -82,7 +88,8 @@ function _storeWinners(winner: TradeWinnings): void {
 // try to find round with given id, if id dosen't match 
 // means round with that id has ended, id has increased, create a new round
 function _getOrCreateRoundEnded(id: number): Round {
-  let entity = Round.load(id.toString());
+  // here using counter values as rounds id
+  let entity = Round.load(id.toString()); 
   if (entity === null) {
     entity = new Round(id.toString());
     entity.traders = [];
